@@ -1,25 +1,22 @@
-import React, {useEffect, useState} from 'react';
-import {StyleSheet, View, Text, TouchableOpacity, Button} from 'react-native';
+import React from 'react';
+import {StyleSheet, View, Text, TouchableOpacity} from 'react-native';
 export const TaskSummaryScreen = ({route, navigation}) => {
   console.log('route params', route.params);
   const routeParam = route.params;
   return (
     <View style={styles.mainContainer}>
-      ``
       <View style={styles.container}>
         <View style={{flex: 3}}>
           <Text style={styles.txt}>Task Name:</Text>
           <Text style={styles.txt}>Description: </Text>
           <Text style={styles.txt}>Total time spent: </Text>
           <Text style={styles.txt}>Tag: </Text>
-          {/* Render additional user details */}
         </View>
         <View style={{flex: 3, alignItems: 'flex-end'}}>
           <Text style={styles.txt}>{routeParam.params.task} </Text>
           <Text style={styles.txt}>{routeParam.params.des}</Text>
           <Text style={styles.txt}>{routeParam.params.spentTime}</Text>
           <Text style={styles.txt}>{routeParam.params.priority}</Text>
-          {/* Render additional user details */}
         </View>
       </View>
       <TouchableOpacity
