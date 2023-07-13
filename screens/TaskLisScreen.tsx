@@ -105,7 +105,7 @@ export const TaskListScreen = ({navigation}) => {
       <View style={styles.container}>
         <StatusBar backgroundColor="#920000" barStyle="light-content" />
         <View style={styles.innerContainer}>
-          <FormField label={LABLE.ADD_TASK.TASK_NAME}>
+          <FormField label={LABLE.ADD_TASK.TAG_FILTER}>
             <TextInput
               style={styles.input}
               placeholder="Search by tag"

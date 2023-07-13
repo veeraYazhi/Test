@@ -15,7 +15,6 @@ const InputText: React.FC<InputProps> = ({...props}) => {
       onChangeText={props.onChangeTxt}
       value={props.value}
       placeholder={props.placeholderText}
-      keyboardType="numeric"
       textContentType={props.textType}
       secureTextEntry={props.secureText}
     />

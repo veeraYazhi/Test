@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet, View, Text, TouchableOpacity} from 'react-native';
-export const TaskSummaryScreen = ({route, navigation}) => {
+export const TaskSummaryScreen = ({route, navigation}: any) => {
   console.log('route params', route.params);
   const routeParam = route.params;
   return (
@@ -40,10 +40,6 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
     marginBottom: 20,
-  },
-  inputContainer: {
-    marginBottom: 20,
-    width: '100%',
   },
   submitButton: {
     width: '100%',

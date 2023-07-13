@@ -5,6 +5,7 @@ export const LABLE = {
   ADD_TASK: {
     TASK_NAME: 'Task Name',
     DESCRIPTION: 'Description',
+    TAG_FILTER: 'Tag Filter',
     TAG: {
       LOW: 'Low',
       MEDIUM: 'Medium',
